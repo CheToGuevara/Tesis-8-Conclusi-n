@@ -1,0 +1,51 @@
+\section{Validación de hipótesis}
+\label{conclu:hipotesis}
+\section{Contribuciones}
+\subsection{Contribuciones científicas}
+\label{conclu:cientifica}
+
+\textbf{Congreso nacional } \emph{``An Interactive Algorithm for Virtual Patient Positioning"} \cite{asdf} presentando en Congreso Español de Informática Gráfica en 2015. 
+
+\textbf{Artículo científico }\emph{``Real-time animation of human characters' anatomy"}\cite{asdf} presentando en la revista Computer \& Graphics en 2018. 
+
+La primera contribución fue presentar una versión inicial del algoritmo en un congreso nacional. El objetivo era la .
+En esta publicación, la técnica de \emph{skinning} utilizada es \ac{DQS} que, aunque es una solución recurrente al método clásico \ac{LBS}, generaba incrementos de volumen que no eran útiles para utilizarlos en entrenamiento médico. De esta manera se introdujo un proceso de optimización no interactivo a cambio de mejorar la deformación de salida.
+
+Mientras se trabajaba en las distintas integraciones del algoritmo en los casos de uso presentado, se buscó alternativas a la técnica \ac{DQS}.
+
+Así, como segunda contribución se presentó un artículo en una revista impactada, en el que se presentaba el algoritmo propuesto. Como se ha descrito en los resultados del capítulo (sec. \ref{posing:result}), la solución propuesta al utilizar \ac{COR} podría reemplazar la fase de optimización con la consecución de que la herramienta sea totalmente interactiva.
+
+
+
+
+
+\subsection{Contribuciones técnicas}
+\label{conclu:tecnica}
+\textbf{ Congreso Internacional }\emph{`` A Virtual Physiological Human Model for Regional Anaesthesia"}\cite{asdf} presentado en la conferencia Virtual Physiological Human (VPH) en 2016.
+
+La primera contribución técnica es la inclusión del algoritmo propuesto dentro del proyecto \ac{RASimAS}. La idea principal era crear una herramienta que permita crear una base de datos que contenga multitud de variaciones anatómicas.  Se publicó inicialmente esta publicación en el congreso \emph{ Virtual Physiological Human (VPH)} como introducción a las demás publicaciones relacionadas con el proyecto \ac{RASimAs}. Lamentablemente, no ha podido seguir en esta línea hasta que el simulador haya pasado su validación clínica.
+
+\textbf{ Congreso Internacional }\emph{``gVirtualXRay: Virtual X-Ray Imaging Library on GPU"}\cite{asdf} presentando en el congreso Computer Graphics and Visual Computing en 2017.
+
+La segunda contribución surge como colaboración entre participantes del proyecto europeo. Por parte de la \emph{Universidad de Bangor}, \emph{Franck P. Vidal} \cite{gVirtualXRay} dirige un proyecto de simulación de rayos X utilizando la arquitectura de las tarjetas gráficas. Esta técnica junto con el algoritmo de posicionador de pacientes virtuales han dado como resultado un simulador de radiología diagnóstica.
+
+
+
+
+\section{Limitaciones y líneas futuras}
+\label{conclu:future}
+La principal limitación que presenta el algoritmo  de posicionamiento de pacientes virtuales es que se ha diseñado utilizando técnicas geométricas. Como tal, los resultados que proporcionan son heurísticos y no son físicamente correctos. Esta característica impide que pueda emplearse para planificación quirúrgica o en aquellos lugares que necesiten un comportamiento fiel a la realidad. Aún así, los resultados obtenidos son lo suficientemente plausibles para proporcionar un método para generar modelos anatómicos en el contexto de entrenamiento médico.
+
+Se puede destacar que el cauce de animación esqueletal permite actualizar los algoritmos utilizados en cada etapa independientemente. En el futuro pueden sustituirse etapas por nuevos métodos que permitan mejorar los resultados, incluso aquellos métodos físicos que permitan animación en tiempos interactivos.
+
+Aunque el proyecto \ac{RASimAs} se completó de manera favorable, la falta de validación clínica es un requisito fundamental para la publicación de resultados. Se espera poder solucionar los defectos que presentan los dispositivos o incorporar otros diferentes con el fin de poder llevar el simulador a los entornos clínicos.
+Adicionalmente, este entorno se podría adaptar a otro tipo de procedimientos. Las adaptaciones hechas con tecnología de impresoras 3d para crear los instrumentas médicos permiten adaptar el entorno de trabajo a otros tipos de instrumentos y procedimientos médicos.
+
+En cuanto al simulador de diagnóstico radiológico, este presenta las mismas limitaciones que el posicionador de pacientes virtuales. Las deformaciones producidas son utilizadas como ejemplos de entrenamiento y no sirve para planificación que utilice imagen médica en el procedimiento. Por otra parte, se encuentran las limitaciones del método de simulación de rayos X. La simulación de la variación de intensidad no está incorporada en el sistema, y es un parámetro importante para conseguir una imagen radiológica de calidad. 
+Otra funcionalidad extra que se podría incluir en el simulador, es la medición de la dosis recibida por el paciente. Existen actualmente simuladores de dosis y calculadoras \emph{online} \cite{xraydose}, que podrían ser incorporadas al simulador.
+
+
+
+
+
+

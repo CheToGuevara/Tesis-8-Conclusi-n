@@ -1,0 +1,32 @@
+\documentclass[12pt,a4paper,twoside,english]{book}
+
+\usepackage{Formato}
+
+\title{Tesis 8 Conclusión }
+\author{Aaron Sújar}
+
+\begin{document}
+\frontmatter
+
+
+
+\include{Acronyms}
+
+
+\tableofcontents
+\listoffigures
+ 
+\listoftables
+
+\mainmatter
+
+\input{conclusion}
+\input{contribucion}
+%\appendix
+%\include{appendix}
+\cleardoublepage
+% Como incorporar como un capitulo mas en el indice de la bibliografia
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{bibliography}
+\bibliographystyle{alpha}
+\end{document}
